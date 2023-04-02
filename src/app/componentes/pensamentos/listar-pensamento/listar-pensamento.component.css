@@ -1,3 +1,13 @@
+.botoes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.botoes button {
+  margin-left: 10px;
+  margin-right: 2px;
+}
+
 .mural {
   display: flex;
   flex-wrap: wrap;
@@ -10,9 +20,76 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  justify-content: center;
 }
 
 .sem-pensamentos {
   text-align: center;
   padding: 2rem 0 5rem;
+}
+
+.buscar-pensamentos {
+  background: #F8F9FE;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  height: 44px;
+  left: 421px;
+  top: 490px;
+  width: 510px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  align-self: center;
+}
+
+.buscar-pensamentos img {
+  padding-right: 15px;
+}
+
+input::placeholder {
+  color: #C4C4C4;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+.filtro {
+  width: 100%;
+  height: 100%;
+  left: 437px;
+  top: 537px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  border: none;
+  outline: 0;
+  text-decoration: none;
+  padding-left: 15px;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 216px) {
+  .buscar-pensamentos {
+    width: 250px;
+  }
+}
+
+@media screen and (min-width: 396px) {
+  .buscar-pensamentos {
+    width: 380px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .buscar-pensamentos {
+    width: 510px;
+  }
 }
