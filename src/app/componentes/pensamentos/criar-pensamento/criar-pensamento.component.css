@@ -1,0 +1,135 @@
+.acoes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.botao {
+  margin: 5px;
+  margin-top: 70px;
+  width: 200px;
+}
+
+.criar-pensamentos {
+  padding: 2rem 0;
+}
+
+.criar-pensamentos form {
+  background: #C4EDFF;
+
+  border: none;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 2rem;
+}
+
+.criar-pensamentos form label {
+  color: #154580;
+  font-weight: bold;
+  margin: 0 0 1rem;
+}
+
+.criar-pensamentos form .input {
+  border: none;
+  height: 40px;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  margin: 0.5rem 0 2rem;
+}
+
+
+.criar-pensamentos form .textarea {
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  margin: 0.5rem 0 2rem;
+}
+
+.container-radio {
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.modelos {
+  display: flex;
+  gap: 2.5rem;
+  border: 1px solid red;
+}
+
+.modelo {
+  background-color: #F8F9FE;
+  padding: 1rem;
+  max-width: 250px;
+  margin: 1rem 0 2rem;
+}
+
+.modelo .conteudo {
+  margin: 1rem auto;
+  word-wrap: break-word;
+}
+
+.modelo .autoria {
+  word-wrap: break-word;
+}
+
+.radio {
+  margin: 0;
+}
+
+.modelo1 {
+  box-shadow: 8px 8px 0px #154580;
+}
+
+.modelo2 {
+  box-shadow: 8px 8px 0px #6BD1FF;
+}
+
+.modelo3 {
+  box-shadow: 8px 8px 0px #84EEC1;
+}
+
+input[type='radio'] {
+  display: none;
+}
+
+.radio-modelo label {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.custom-radio {
+  border: 1px solid #154580;
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+}
+
+.custom-radio,
+span {
+  transition: 0.5s ease;
+  color: #154580;
+}
+
+.custom-radio span {
+  content: '';
+  width: 18px;
+  height: 18px;
+  background: transparent;
+  border-radius: 50%;
+}
+
+input[type='radio']:checked+.custom-radio {
+  border-color: #154580;
+}
+
+input[type='radio']:checked+.custom-radio span {
+  background: #154580;
+}
